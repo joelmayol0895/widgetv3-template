@@ -4,9 +4,8 @@ import PromotedProducts from "./components/PromotedProducts";
 import ReviewsCarousel from "./components/ReviewsCarousel";
 import SEO from "./components/SEO";
 import ReviewsTab from "./components/ReviewsTab";
-// import StarRating from "./components/StarRating";
-// import UgcGallery from "./components/UgcGallery";
-
+import StarRating from "./components/StarRating";
+import UgcGallery from "./components/UgcGallery";
 
 
 function App() {
@@ -85,11 +84,35 @@ function App() {
             clipboardsnippetnote={SnippetClipboardNote}
           />
 
+          <StarRating
+            instanceid={InstanceId_StarRating}
+            productid={ProductId}
+            active="false"
+            heading="Star Rating"
+            clipboardheading={ClipBoardHeading}
+            clipboardscript={ScriptClipboard}
+            clipboardscriptnote={ScriptClipboardNote}
+            clipboardsnippet={SnippetClipboard}
+            clipboardsnippetnote={SnippetClipboardNote}
+          />
+
           <PromotedProducts
             instanceid={InstanceId_PromotedProd}
             productid={ProductId}
             active="false"
             heading="Promoted Products"
+            clipboardheading={ClipBoardHeading}
+            clipboardscript={ScriptClipboard}
+            clipboardscriptnote={ScriptClipboardNote}
+            clipboardsnippet={SnippetClipboard}
+            clipboardsnippetnote={SnippetClipboardNote}
+          />
+
+          <UgcGallery
+            instanceid={InstanceId_UgcGallery}
+            productid={ProductId}
+            active="false"
+            heading="UGC Gallery"
             clipboardheading={ClipBoardHeading}
             clipboardscript={ScriptClipboard}
             clipboardscriptnote={ScriptClipboardNote}
