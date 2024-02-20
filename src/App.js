@@ -1,11 +1,12 @@
 import Widget from "./components/Widget";
+import QA from "./components/QA";
 import PromotedProducts from "./components/PromotedProducts";
-// import ReviewsCarousel from "./components/ReviewsCarousel";
+import ReviewsCarousel from "./components/ReviewsCarousel";
 // import SEO from "./components/SEO";
 // import StarRating from "./components/StarRating";
 // import UgcGallery from "./components/UgcGallery";
 // import ReviewsTab from "./components/ReviewsTab";
-// import QA from "./components/QA";
+
 
 function App() {
   //Instance ID
@@ -40,6 +41,30 @@ function App() {
             productid={ProductId}
             active="true"
             heading="Reviews Widget"
+            clipboardheading={ClipBoardHeading}
+            clipboardscript={ScriptClipboard}
+            clipboardscriptnote={ScriptClipboardNote}
+            clipboardsnippet={SnippetClipboard}
+            clipboardsnippetnote={SnippetClipboardNote}
+          />
+
+          <QA
+            instanceid={InstanceId_QA}
+            productid={ProductId}
+            active="false"
+            heading="Q&A"
+            clipboardheading={ClipBoardHeading}
+            clipboardscript={ScriptClipboard}
+            clipboardscriptnote={ScriptClipboardNote}
+            clipboardsnippet={SnippetClipboard}
+            clipboardsnippetnote={SnippetClipboardNote}
+          />
+
+          <ReviewsCarousel
+            instanceid={InstanceId_Carousel}
+            productid={ProductId}
+            active="false"
+            heading="Reviews Carousel"
             clipboardheading={ClipBoardHeading}
             clipboardscript={ScriptClipboard}
             clipboardscriptnote={ScriptClipboardNote}
