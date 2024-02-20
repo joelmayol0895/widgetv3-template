@@ -1,16 +1,16 @@
-// import WidgetClipboard from "../clipboards/WidgetClip";
-// import ScriptClipBoard from "../clipboards/ScriptClip";
+import WidgetClipboard from "../clipboards/WidgetClip";
+import ScriptClipBoard from "../clipboards/ScriptClip";
 
 function Widget(props) {
   const heading = props.heading;
   const instanceid = props.instanceid;
   const active = props.active;
   const productid = props.productid;
-//   const clipboardheading = props.clipboardheading;
-//   const clipboardscript = props.clipboardscript;
-//   const clipboardscriptnote = props.clipboardscriptnote;
-//   const clipboardsnippet = props.clipboardsnippet;
-//   const clipboardsnippetnote = props.clipboardsnippetnote;
+  const clipboardheading = props.clipboardheading;
+  const clipboardscript = props.clipboardscript;
+  const clipboardscriptnote = props.clipboardscriptnote;
+  const clipboardsnippet = props.clipboardsnippet;
+  const clipboardsnippetnote = props.clipboardsnippetnote;
 
   if (instanceid === "") {
     return null;
@@ -57,7 +57,7 @@ function Widget(props) {
             ></div>
           </div>
 
-          {/* <div class="cliboard-holder">
+          <div class="cliboard-holder">
             <h2>
               {clipboardheading} {heading} to your store
             </h2>
@@ -73,7 +73,7 @@ function Widget(props) {
               <p>{clipboardsnippetnote}</p>
               <WidgetClipboard />
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     );
