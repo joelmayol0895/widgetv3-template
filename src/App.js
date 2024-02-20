@@ -2,10 +2,11 @@ import Widget from "./components/Widget";
 import QA from "./components/QA";
 import PromotedProducts from "./components/PromotedProducts";
 import ReviewsCarousel from "./components/ReviewsCarousel";
-// import SEO from "./components/SEO";
+import SEO from "./components/SEO";
+import ReviewsTab from "./components/ReviewsTab";
 // import StarRating from "./components/StarRating";
 // import UgcGallery from "./components/UgcGallery";
-// import ReviewsTab from "./components/ReviewsTab";
+
 
 
 function App() {
@@ -60,6 +61,18 @@ function App() {
             clipboardsnippetnote={SnippetClipboardNote}
           />
 
+          <SEO
+            instanceid={InstanceId_SEO}
+            productid={ProductId}
+            active="false"
+            heading="SEO"
+            clipboardheading={ClipBoardHeading}
+            clipboardscript={ScriptClipboard}
+            clipboardscriptnote={ScriptClipboardNote}
+            clipboardsnippet={SnippetClipboard}
+            clipboardsnippetnote={SnippetClipboardNote}
+          />
+
           <ReviewsCarousel
             instanceid={InstanceId_Carousel}
             productid={ProductId}
@@ -82,6 +95,11 @@ function App() {
             clipboardscriptnote={ScriptClipboardNote}
             clipboardsnippet={SnippetClipboard}
             clipboardsnippetnote={SnippetClipboardNote}
+          />
+
+          <ReviewsTab 
+            instanceid={InstanceId_ReviewsTab} 
+            productid={ProductId} 
           />
         </div>
       </div>
