@@ -7,7 +7,6 @@ import ReviewsTab from "./components/ReviewsTab";
 import StarRating from "./components/StarRating";
 import UgcGallery from "./components/UgcGallery";
 
-
 function App() {
   //Instance ID
   let InstanceId_Widget = "714949";
