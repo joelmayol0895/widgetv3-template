@@ -5,18 +5,32 @@ import './css/main.css';
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 
-const yotpoWidgetsContainer = () => {
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      if (typeof yotpoWidgetsContainer !== "undefined") {
-        yotpoWidgetsContainer.initWidgets();
-        console.log("loaded");
-      } else {
-        console.log("yotpoWidgetsContainer not found, no widgets to initialize");
-      }
-    }, 1000);
-  });
-}
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    if (typeof yotpoWidgetsContainer !== "undefined") {
+      yotpoWidgetsContainer.initWidgets();
+      console.log("loaded");
+    } else {
+      console.log("yotpoWidgetsContainer not found, no widgets to initialize");
+    }
+  }, 1000);
+});
+
+
+// import React, { useEffect } from 'react';
+// const MyComponent = () => {
+//   useEffect(() => {
+//     const handleLoad = () => {
+//       // Perform actions after the component has fully loaded
+//     };
+//     window.addEventListener('load', handleLoad);
+//     return () => {
+//       window.removeEventListener('load', handleLoad);
+//     };
+//   }, []);
+//   return <div>My Component</div>;
+// };
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
