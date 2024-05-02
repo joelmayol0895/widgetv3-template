@@ -4,7 +4,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 function WidgetClipBoard() {
   const [value, setValue] = useState(`
     <div class="yotpo-widget-instance" 
-      data-yotpo-instance-id="513953" 
+      data-yotpo-instance-id="714949" 
       data-yotpo-product-id="Product ID" 
       data-yotpo-name="Product Title" 
       data-yotpo-url="The URL of your product page" 

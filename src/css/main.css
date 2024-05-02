@@ -19,7 +19,7 @@ body {
 }
 
 .template-header {
-  background: var(--primary-template-background);
+  background: var(--light-template-background);
   height: 15vh;
   display: flex;
   align-items: end;
@@ -33,6 +33,15 @@ body {
   align-items: center;
   color: var(--light-template-background);
   align-self: center;
+}
+
+.logo svg {
+  height: auto;
+  max-width: 100%;
+  object-fit: var(--object-fit, contain);
+  object-position: var(--object-position, center);
+  position: absolute;
+  width: 200px;
 }
 
 .logo h2 {
