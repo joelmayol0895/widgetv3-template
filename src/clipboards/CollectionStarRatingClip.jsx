@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-function SEOClipboard(props) {
+function CollectionStarRatingClipboard(props) {
   const instanceid = props.instanceid;
   const [value, setValue] = useState(`
-    <div class="yotpo-widget-instance" 
-    data-yotpo-instance-id="${instanceid}"
-    data-yotpo-product-id="Product ID"/>
-    `);
+  <div className="yotpo-widget-instance"
+      data-yotpo-instance-id="${instanceid}"
+      data-yotpo-product-id="Product ID"
+      data-yotpo-section-id="collection">
+    </div>`);
   const [isCopied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -41,4 +42,4 @@ function SEOClipboard(props) {
   );
 }
 
-export default SEOClipboard;
+export default CollectionStarRatingClipboard;

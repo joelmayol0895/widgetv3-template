@@ -71,7 +71,7 @@ function Widget(props) {
             <div class="clipboard-details">
               <h3>{clipboardsnippet}</h3>
               <p>{clipboardsnippetnote}</p>
-              <WidgetClipboard />
+              <WidgetClipboard instanceid={instanceid} />
             </div>
           </div>
         </div>

@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-function StarRatingClipboard() {
+function StarRatingClipboard(props) {
+  const instanceid = props.instanceid;
   const [value, setValue] = useState(`
       <div class="yotpo-widget-instance" 
-      data-yotpo-instance-id="491372" 
-      data-yotpo-product-id="Product ID">
+      data-yotpo-instance-id="${instanceid}"
+      data-yotpo-product-id="Product ID"
+      data-yotpo-section-id="product">
       </div>
     `);
   const [isCopied, setCopied] = useState(false);

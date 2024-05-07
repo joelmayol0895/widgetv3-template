@@ -69,7 +69,7 @@ function QA(props) {
             <div class="clipboard-details">
               <h3>{clipboardsnippet}</h3>
               <p>{clipboardsnippetnote}</p>
-              <QAClipboard />
+              <QAClipboard instanceid={instanceid} />
             </div>
           </div>
         </div>

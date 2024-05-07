@@ -65,7 +65,7 @@ function UgcGallery(props) {
             <div class="clipboard-details">
               <h3>{clipboardsnippet}</h3>
               <p>{clipboardsnippetnote}</p>
-              <UgcGalleryClipboard />
+              <UgcGalleryClipboard instanceid={instanceid} />
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import StarRatingClipboard from "../clipboards/StarRatingClip";
 import ScriptClipBoard from "../clipboards/ScriptClip";
+import CollectionStarRatingClipboard from "../clipboards/CollectionStarRatingClip";
 
 function StarRating(props) {
   const heading = props.heading;
@@ -81,7 +82,15 @@ function StarRating(props) {
             <div class="clipboard-details">
               <h3>{clipboardsnippet}</h3>
               <p>{clipboardsnippetnote}</p>
-              <StarRatingClipboard />
+              <StarRatingClipboard instanceid={instanceid} />
+            </div>
+
+            <div class="clipboard-details">
+              <h3>
+                3. Add the following code snippet to your collection page.
+              </h3>
+              <p>{clipboardsnippetnote}</p>
+              <CollectionStarRatingClipboard instanceid={instanceid} />
             </div>
           </div>
         </div>

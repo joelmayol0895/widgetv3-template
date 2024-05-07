@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-function UgcGalleryClipboard() {
+function UgcGalleryClipboard(props) {
+  const instanceid = props.instanceid;
   const [value, setValue] = useState(`
         <div className="yotpo-widget-instance" 
-            data-yotpo-instance-id={ instanceid === '' ? '608405' : instanceid }  
-            data-yotpo-product-id={ instanceid === '' ? null : productid }
-            mode-preview={ modepreview }>
+            data-yotpo-instance-id="${instanceid}"
+            data-yotpo-product-id="Product ID">
         </div>
     `);
   const [isCopied, setCopied] = useState(false);

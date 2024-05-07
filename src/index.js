@@ -18,21 +18,6 @@ import "bootstrap/dist/css/bootstrap.css";
 // });
 
 
-// import React, { useEffect } from 'react';
-// const MyComponent = () => {
-//   useEffect(() => {
-//     const handleLoad = () => {
-//       // Perform actions after the component has fully loaded
-//     };
-//     window.addEventListener('load', handleLoad);
-//     return () => {
-//       window.removeEventListener('load', handleLoad);
-//     };
-//   }, []);
-//   return <div>My Component</div>;
-// };
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

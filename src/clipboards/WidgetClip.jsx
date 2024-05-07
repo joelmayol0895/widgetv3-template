@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-function WidgetClipBoard() {
+function WidgetClipBoard(props) {
+  const instanceid = props.instanceid;
   const [value, setValue] = useState(`
     <div class="yotpo-widget-instance" 
-      data-yotpo-instance-id="714949" 
+      data-yotpo-instance-id="${instanceid}"
       data-yotpo-product-id="Product ID" 
       data-yotpo-name="Product Title" 
       data-yotpo-url="The URL of your product page" 
