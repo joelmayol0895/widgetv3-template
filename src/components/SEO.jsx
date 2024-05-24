@@ -49,6 +49,7 @@ function SEO(props) {
               className="yotpo-widget-instance"
               data-yotpo-instance-id={instanceid}
               data-yotpo-product-id={productid}
+              mode-preview={productid === "" ? "true" : ""}
             />
           </div>
 

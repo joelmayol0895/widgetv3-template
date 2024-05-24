@@ -53,6 +53,7 @@ function StarRating(props) {
                   data-yotpo-instance-id={instanceid}
                   data-yotpo-product-id={productid}
                   data-yotpo-section-id="product"
+                  mode-preview={productid === "" ? "true" : ""}
                 ></div>
               </section>
 
@@ -63,6 +64,7 @@ function StarRating(props) {
                   data-yotpo-instance-id={instanceid}
                   data-yotpo-product-id={productid}
                   data-yotpo-section-id="collection"
+                  mode-preview={productid === "" ? "true" : ""}
                 ></div>
               </section>
             </div>
