@@ -23,7 +23,7 @@ function App() {
 
   //Clipboard text here.
   let ClipBoardHeading = "Follow these steps to add this";
-  let ScriptClipboard = "1. Add the following to your <head> tag. Sample";
+  let ScriptClipboard = "1. Add the following to your <head> tag.";
   let ScriptClipboardNote =
     "If you already have this script, please disregard since using one script will work for all of the Yotpo code snippets";
   let SnippetClipboard =
